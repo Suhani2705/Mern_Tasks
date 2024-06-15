@@ -2,96 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CSS-TASK:5</title>
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: yellow;
-      }
-      .container {
-        display: flex;
-        justify-content: center;
-      }
-      .sidebar {
-        width: 200px; /* Width of the sidebar */
-        padding: 20px;
-      }
-      .sidebar div {
-        padding: 10px;
-      }
-      .sidebar div a {
-        text-decoration: none;
-        color: blue;
-        width: 20px;
-        height: 5px;
-      }
-      .content {
-        flex: 1; /* Take remaining space */
-        padding: 20px;
-        color: purple;
-        font-family: Arial, sans-serif;
-        background-color: yellow;
-      }
-      .content h1 {
-        margin-top: 0;
-      }
-      .content p {
-        line-height: 1.6;
-      }
-      #home {
-        color: purple;
-      }
-      .item {
-        border: 1px solid black;
-        padding-bottom: 5px;
-        margin-bottom: 10px; 
-        background: linear-gradient(to right, white 85%, black 15%);
-
-      }
-      .item::before{
-        width:85%;
-        background-color:black;
-      }
-      
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="sidebar">
-        <div class="item" style="margin-top: 20px;">
-          <a href="home" id="home">Home page</a>
-        </div>
-
-        <div class="item">
-          <a href="">Musings</a>
-        </div>
-        <div class="item">
-          <a href="#">My Town</a>
-        </div>
-        <div class="item">
-          <a href="#">Links</a>
-        </div>
-      </div>
-      <div class="content">
-        <h1>My first styled page</h1>
-        <p>
-          Welcome to my styled page!
-          <br /><br />
-          It lacks images, but at least it has style. And it has links, even if
-          they don't go anywhere...
-          <br /><br />
-          There should be more here, but I don't know what yet.
-        </p>
-        <hr />
-        <p>
-          Made 5 April 2004
-          <br />
-          by myself.
-        </p>
-      </div>
+    <h1>
+      <center><font color="blue">Registration form</font></center>
+    </h1>
+    <div align="center">
+      <table border="1" cellspacing="0" width="50%">
+        <tr>
+          <td width="50%">
+            <b><center>First Name</center></b>
+          </td>
+          <td><input type="text" name="firstName" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Last Name</center></b>
+          </td>
+          <td><input type="text" name="lastName" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Email</center></b>
+          </td>
+          <td><input type="email" name="email" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Password</center></b>
+          </td>
+          <td><input type="password" name="password" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Re-enter Password</center></b>
+          </td>
+          <td><input type="password" name="rePassword" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Gender</center></b>
+          </td>
+          <td>
+            <input type="radio" name="gender" value="Male" /> Male <br />
+            <input type="radio" name="gender" value="Female" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Age</center></b>
+          </td>
+          <td><input type="number" name="age" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Phone number</center></b>
+          </td>
+          <td><input type="tel" name="phone" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Address</center></b>
+          </td>
+          <td><textarea name="addr" rows="4" cols="37"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>State</center></b>
+          </td>
+          <td><input type="text" name="state" size="50" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Country</center></b>
+          </td>
+          <td>
+            <select name="country">
+              <option value="">Choose your country</option>
+              <option value="India">India</option>
+              <option value="US">US</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><center>Languages known</center></b>
+          </td>
+          <td>
+            <center>
+              <input type="checkbox" name="languages" value="English" /> English
+              <input type="checkbox" name="languages" value="Kannada" /> Kannada
+              <input type="checkbox" name="languages" value="Hindi" /> Hindi
+              <input type="checkbox" name="languages" value="Telugu" /> Telugu
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="declare" /> Hereby, I declare all the
+            given details are true
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right">
+            Log in to <a href="https://ethnus.com">Ethnus</a> website
+          </td>
+        </tr>
+      </table>
+      <br />
+      <center><input type="button" value="Register" /></center>
     </div>
   </body>
 </html>
