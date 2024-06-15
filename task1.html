@@ -3,34 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Task 1</title>
   </head>
+  <style>
+    .table-container {
+      border: 1px solid black;
+      border-radius: 15px; /* Rounds the outer corners */
+      overflow: hidden; /* Ensures inner content respects the rounded corners */
+      display: inline-block; /* Adjusts the container size to fit the table */
+      width: 100%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 13px;
+    }
+    th,
+    td {
+      border: 1px solid black;
+
+      border-radius: 75px;
+      width: 100px;
+      height: 30px;
+    }
+  </style>
   <body>
-    <table border="0" cellspacing="2" cellpadding="5" width="100%">
-      <thead bgcolor="#a3d2d3">
+    <div class="table-container">
+      <table border="1" bgcolor="aqua" width="100%" cellspacing="4">
         <tr>
-          <th>Firstname</th>
+          <div>
+            <th>Firstname</th>
+          </div>
           <th>Lastname</th>
           <th>Age</th>
         </tr>
-      </thead>
-      <tbody>
-        <tr bgcolor="#a3d2d3">
+        <tr>
           <td>Jill</td>
+
           <td>Smith</td>
           <td>50</td>
         </tr>
-        <tr bgcolor="#a3d2d3">
+        <tr>
           <td>Eve</td>
+
           <td>Jackson</td>
           <td>94</td>
         </tr>
-        <tr bgcolor="#a3d2d3">
+        <tr>
           <td>John</td>
+
           <td>Doe</td>
           <td>80</td>
         </tr>
-      </tbody>
-    </table>
+      </table>
+    </div>
   </body>
 </html>
